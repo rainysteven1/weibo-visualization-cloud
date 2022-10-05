@@ -1,10 +1,10 @@
-package com.rainy.spider;
+package com.rainy.modules;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WeiboVisualizationSpiderApplicationTests {
+class WeiboVisualizationModulesApplicationTests {
 
     @Test
     void contextLoads() {
