@@ -1,13 +1,13 @@
-package com.rainy.modules;
+package com.rainy.spider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WeiboVisualizationModulesApplication {
+public class WeiboVisualizationSpiderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WeiboVisualizationModulesApplication.class, args);
+        SpringApplication.run(WeiboVisualizationSpiderApplication.class, args);
     }
 
 }

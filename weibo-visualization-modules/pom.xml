@@ -16,6 +16,9 @@
 
 
     <packaging>pom</packaging>
+    <modules>
+        <module>weibo-visualization-spider</module>
+    </modules>
 
 
     <dependencies>
