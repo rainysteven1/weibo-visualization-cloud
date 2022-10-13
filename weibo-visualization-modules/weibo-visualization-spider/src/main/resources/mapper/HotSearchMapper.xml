@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rainy.spider.mapper.HotSearchMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.rainy.spider.entity.HotSearch">
+        <id column="hot_search_id" property="hotSearchId" />
+        <result column="is_delete" property="isDelete" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="hot_search_rank" property="hotSearchRank" />
+        <result column="hot_search_title" property="hotSearchTitle" />
+        <result column="hot_search_heat" property="hotSearchHeat" />
+        <result column="hot_search_url" property="hotSearchUrl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        is_delete,
+        create_time,
+        update_time,
+        hot_search_id, hot_search_rank, hot_search_title, hot_search_heat, hot_search_url
+    </sql>
+
+</mapper>
