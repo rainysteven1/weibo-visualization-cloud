@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  redis:
+    image: redis:7.0.4
+    container_name: redis
+    restart: always
+    privileged: true
+    ports:
+      - "6379:6379"
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - ./redis/data:/data
+      - ./redis/redis.conf:/etc/redis/redis.conf
+      - ./redis/logs:/logs
+    command: [ "redis-server","/etc/redis/redis.conf" ]

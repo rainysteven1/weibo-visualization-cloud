@@ -26,6 +26,10 @@
         <freemarker.version>2.3.31</freemarker.version>
         <mysql.version>8.0.29</mysql.version>
         <swagger.version>2.9.2</swagger.version>
+        <guava.version>30.0-android</guava.version>
+        <jsoup.version>1.15.3</jsoup.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <http-client.version>4.5.13</http-client.version>
     </properties>
 
     <dependencies>
@@ -77,6 +81,19 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+
     </dependencies>
 
 

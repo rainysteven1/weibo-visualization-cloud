@@ -29,3 +29,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Docker ###
+docker/redis
+!/docker/redis/redis.conf
