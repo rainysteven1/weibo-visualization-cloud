@@ -5,9 +5,12 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.rainy.common.entity.BaseEntity;
+
 import java.io.Serializable;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -25,6 +28,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @TableName("hot_search")
 @ApiModel(value = "HotSearch对象", description = "项目文件表")
+@Builder
 public class HotSearch extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
